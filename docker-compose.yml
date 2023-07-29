@@ -4,6 +4,7 @@ services:
   binary-encoding-api:
     environment:
       - NODE_ENV=development
+      - NODE_OPTIONS=--max-http-header-size=1023
     build:
       context: .
       dockerfile: Dockerfile
