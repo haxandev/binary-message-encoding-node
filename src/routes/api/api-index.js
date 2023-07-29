@@ -11,7 +11,7 @@ router
 .post(controller.decode);
 
 router
-  .route('/store-file')
-  .post(controller.storeFile);
+  .route('/store-image')
+  .post(controller.storeImage);
 
 module.exports = router;

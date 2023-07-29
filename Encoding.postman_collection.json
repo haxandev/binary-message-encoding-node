@@ -71,7 +71,7 @@
 				"body": {
 					"mode": "file",
 					"file": {
-						"src": "/Users/muhammadhassan/Desktop/Screenshot 2023-07-25 at 11.19.10 AM.png"
+						"src": "/Users/muhammadhassan/Desktop/Sample-jpg-image-200kb.jpg"
 					},
 					"options": {
 						"raw": {
@@ -80,7 +80,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/store-file",
+					"raw": "http://localhost:8080/api/store-image",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -88,7 +88,7 @@
 					"port": "8080",
 					"path": [
 						"api",
-						"store-file"
+						"store-image"
 					],
 					"query": [
 						{

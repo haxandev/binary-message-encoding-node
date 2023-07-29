@@ -50,11 +50,11 @@ const validate = (req) => {
 
 
 /**
- * Store Buffer File
+ * Store Buffer Image
  * @public
  */
 
-exports.storeFile = async (req, res, next) => {
+exports.storeImage = async (req, res, next) => {
   try {
     await fileUpload(req.body);
     res.json({
