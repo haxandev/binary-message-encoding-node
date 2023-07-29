@@ -1,4 +1,4 @@
-### Node JS Binary Encoding Endpoint
+### Node JS Binary Encoding
 
 ```sh
 git clone https://github.com/haxandev/binary-message-encoding.git

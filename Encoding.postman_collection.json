@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "d8547e81-4e5f-45f8-ab56-3e1da97bb446",
+		"name": "Encoding",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Encode",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"hassan\",\n    \"email\": \"muhammadhaxxan30@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/encode",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"encode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Decode",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bmFtZQ==\": \"aGFzc2Fu\",\n    \"ZW1haWw=\": \"bXVoYW1tYWRoYXh4YW4zMEBnbWFpbC5jb20=\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/decode",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"decode"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Store Binary File",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "file",
+					"file": {
+						"src": "/Users/muhammadhassan/Desktop/Screenshot 2023-07-25 at 11.19.10 AM.png"
+					},
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/store-file",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"store-file"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "hassan",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "muhammadhaxxan30@gmail.com",
+							"disabled": true
+						},
+						{
+							"key": "image",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
