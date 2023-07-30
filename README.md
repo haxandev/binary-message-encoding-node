@@ -10,7 +10,7 @@ Then install the dependencies **RUN** command:
 make install
 ```
 
-Now we can just run **make up** to run the containers
+Make sure Docker is installed and running on your system and after that just run **make up** to run the container.
 
 
 Here is the postman collection:
