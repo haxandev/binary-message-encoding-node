@@ -1,5 +1,6 @@
 const { fileUpload } = require('../functions/upload');
 const { encode, decode } = require('../functions/binary');
+const { asciiHeadersToString } = require('../functions/ascii');
 
 
 /**
@@ -20,6 +21,7 @@ const validate = (req) => {
 
  exports.encode = async (req, res, next) => {
   try {
+    asciiHeadersToString(req.headers); // Decoded ASCII-encoded headers
     const data = encode(req.body);
     res.json({
       "data":data, 
@@ -38,6 +40,7 @@ const validate = (req) => {
 
  exports.decode = async (req, res, next) => {
   try {
+    asciiHeadersToString(req.headers); // Decoded ASCII-encoded headers
     const data = decode(req.body);
     res.json({
       "data":data, 
